@@ -1,0 +1,58 @@
+{
+    "name": "kui-dashboard-html",
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "Admin dashboard template built with tailwindcss & alpinejs.",
+    "type": "module",
+    "author": {
+        "name": "Ahmed Kamel",
+        "email": "ak3849909@gmail.com",
+        "url": "https://github.com/Kamona-WD"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kamona-ui/kui-dashboard.git",
+        "directory": "templates/html"
+    },
+    "homepage": "https://github.com/kamona-ui/kui-dashboard/tree/main/templates/html#readme",
+    "bugs": {
+        "url": "https://github.com/kamona-ui/kui-dashboard/issues"
+    },
+    "keywords": [
+        "dashboard",
+        "tailwindcss",
+        "layout",
+        "alpinejs",
+        "admin",
+        "template"
+    ],
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "format": "prettier --write \"src\""
+    },
+    "devDependencies": {
+        "@alpinejs/anchor": "^3.14.8",
+        "@alpinejs/collapse": "^3.14.8",
+        "@alpinejs/resize": "^3.14.8",
+        "@iconify-json/tabler": "^1.2.13",
+        "@iconify/tailwind": "^1.2.0",
+        "@tailwindcss/forms": "^0.5.9",
+        "@kui-dashboard/tailwindcss-plugin": "*",
+        "alpinejs": "^3.14.8",
+        "apexcharts": "^4.4.0",
+        "autoprefixer": "^10.4.20",
+        "glob": "^11.0.1",
+        "perfect-scrollbar": "^1.5.6",
+        "postcss": "^8.4.49",
+        "postcss-import": "^16.1.0",
+        "prettier": "^3.4.2",
+        "prettier-plugin-tailwindcss": "^0.6.9",
+        "tailwind-merge": "^2.6.0",
+        "tailwindcss": "^3.4.17",
+        "toastify-js": "^1.12.0",
+        "vite": "^6.0.7",
+        "vite-plugin-handlebars": "^2.0.0"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "private": true,
+    "workspaces": [
+        "templates/*",
+        "plugins/*"
+    ],
+    "scripts": {
+        "html:dev": "cd templates/html && yarn dev",
+        "html:build": "cd templates/html && yarn build",
+        "html:format": "cd templates/html && yarn format",
+        "html:preview": "cd templates/html && yarn preview",
+        "vue:dev": "cd templates/vue && yarn dev",
+        "vue:build": "cd templates/vue && yarn build",
+        "vue:format": "cd templates/vue && yarn format",
+        "vue:preview": "cd templates/vue && yarn preview",
+        "home:dev": "cd templates/home && yarn dev",
+        "home:build": "cd templates/home && yarn build",
+        "home:format": "cd templates/home && yarn format",
+        "home:preview": "cd templates/home && yarn preview",
+        "tw:dev": "cd plugins/tailwindcss && yarn dev",
+        "tw:build": "cd plugins/tailwindcss && yarn build",
+        "format": "prettier --write \"templates\" \"plugins\""
+    },
+    "devDependencies": {
+        "prettier": "^3.4.2",
+        "prettier-plugin-tailwindcss": "^0.6.11"
+    }
+}
