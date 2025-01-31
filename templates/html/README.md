@@ -2,8 +2,6 @@
 
 > ⚠️ This template is not finished yet.
 
-### [Live preview](https://kamona-ui.github.io/kui-dashboard-html/)
-
 ##### To get started:
 
 ```bash

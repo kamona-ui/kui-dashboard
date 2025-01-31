@@ -2,14 +2,6 @@
 
 > ⚠️ This template is not finished yet.
 
-### [Live preview](https://kamona-ui.github.io/kui-dashboard-vue-jsx/)
-
-##### [Vue SFC version](https://github.com/kamona-ui/kui-dashboard-vue/)
-
-##### [HTML version](https://github.com/kamona-ui/kui-dashboard-html/)
-
-##### [Laravel package](https://github.com/Kamona-WD/kui-laravel-breeze/)
-
 ##### To get started:
 
 ```bash
