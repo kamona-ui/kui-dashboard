@@ -4,6 +4,9 @@
     "description": "K-UI dashboard template's tailwindcss plugin.",
     "license": "MIT",
     "private": false,
+    "publishConfig": {
+        "access": "public"
+    },
     "type": "module",
     "author": {
         "name": "Ahmed Kamel",
