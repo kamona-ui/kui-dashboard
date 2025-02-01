@@ -13,5 +13,5 @@ export default defineConfig({
         },
     },
 
-    base: '/kui-dashboard-vue/',
+    base: '/kui-dashboard/vue/',
 })

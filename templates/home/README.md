@@ -2,6 +2,13 @@
 
 > ⚠️ This template is not finished yet.
 
+### [Live preview](https://kamona-ui.github.io/kui-dashboard/)
+
+|                                                    |                                                  |
+| -------------------------------------------------- | ------------------------------------------------ |
+| ![Desktop light](../../showcase/desktop-light.svg) | ![Mobile light](../../showcase/mobile-light.svg) |
+| ![Desktop dark](../../showcase/desktop-dark.svg)   | ![Mobile dark](../../showcase/mobile-dark.svg)   |
+
 ##### To get started:
 
 ```bash
@@ -11,19 +18,19 @@ git clone https://github.com/kamona-ui/kui-dashboard.git
 cd kui-dashboard
 
 # 2. Install the dependencies:
-yarn install # Using npm
+yarn install
 
 # 3. Start the development server:
-yarn home:dev
+yarn dev:home
 ```
 
 ##### Build
 
 ```bash
-yarn home:build
+yarn build:home
 
 # Preview
-yarn home:previw
+yarn preview:home
 ```
 
 ---

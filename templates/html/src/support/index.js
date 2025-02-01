@@ -1,4 +1,4 @@
-export const baseUrl = '/kui-dashboard-html/'
+export const baseUrl = '/kui-dashboard/html/'
 
 export const getScheme = () => {
     if (window.localStorage.getItem('dark')) {
