@@ -49,7 +49,8 @@
         }
     },
     "scripts": {
-        "dev": "node scripts/build --watch",
+        "dev": "run-s dev:*",
+        "dev:js": "node scripts/build --watch",
         "build": "node scripts/build",
         "dev:css": "tailwindcss -i ./src/css/main.css -o ./dist/main.css --watch",
         "build:css": "tailwindcss -i ./src/css/main.css -o ./dist/main.css -m",
