@@ -1,0 +1,1 @@
+import{P as e}from"./PageWrapper-DeTF7Ki1.js";import{d as r,c as t}from"./index-CBseeZv-.js";import"./Button-rqMvxarp.js";const s=r({setup(){return()=>t(e,{title:"Dashboard"},null)}});export{s as default};
