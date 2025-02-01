@@ -1,0 +1,79 @@
+{
+    "name": "@kui-dashboard/alpinejs-plugin",
+    "version": "0.1.0",
+    "description": "K-UI dashboard template's alpinejs plugin.",
+    "license": "MIT",
+    "private": false,
+    "publishConfig": {
+        "access": "public"
+    },
+    "type": "module",
+    "author": {
+        "name": "Ahmed Kamel",
+        "email": "ak3849909@gmail.com",
+        "url": "https://github.com/Kamona-WD"
+    },
+    "keywords": [
+        "dashboard",
+        "tailwindcss",
+        "layout",
+        "alpinejs",
+        "admin",
+        "template"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kamona-ui/kui-dashboard",
+        "directory": "plugins/alpinejs"
+    },
+    "bugs": {
+        "url": "https://github.com/kamona-ui/kui-dashboard/issues"
+    },
+    "main": "dist/index.cjs.js",
+    "module": "dist/index.esm.js",
+    "unpkg": "dist/index.cdn.min.js",
+    "style": "dist/main.css",
+    "files": [
+        "src/**/*.js",
+        "dist/**/*.js",
+        "dist/*.css"
+    ],
+    "exports": {
+        ".": {
+            "require": "./dist/index.cjs.js",
+            "import": "./dist/index.esm.js"
+        },
+        "./dist/main.css": {
+            "import": "./dist/main.css",
+            "require": "./dist/main.css"
+        }
+    },
+    "scripts": {
+        "dev": "node scripts/build --watch",
+        "build": "node scripts/build",
+        "dev:css": "tailwindcss -i ./src/css/main.css -o ./dist/main.css --watch",
+        "build:css": "tailwindcss -i ./src/css/main.css -o ./dist/main.css -m",
+        "clean": "rimraf dist",
+        "prebuild": "run-s clean build:*",
+        "format": "prettier --write \"src\" \"scripts\""
+    },
+    "dependencies": {
+        "@alpinejs/anchor": "^3.14.8",
+        "@alpinejs/collapse": "^3.14.8",
+        "alpinejs": "^3.14.8",
+        "perfect-scrollbar": "^1.5.6"
+    },
+    "peerDependencies": {
+        "@alpinejs/anchor": "^3.14.8",
+        "@alpinejs/collapse": "^3.14.8",
+        "alpinejs": "^3.14.8",
+        "perfect-scrollbar": "^1.5.6"
+    },
+    "devDependencies": {
+        "esbuild": "^0.24.2",
+        "npm-run-all": "^4.1.5",
+        "prettier": "^3.4.2",
+        "rimraf": "^6.0.1",
+        "tailwindcss": "^3.4.17"
+    }
+}

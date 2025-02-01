@@ -1,6 +1,6 @@
 @import 'tailwindcss/base';
 @import 'perfect-scrollbar/css/perfect-scrollbar.css';
-/* @import "toastify-js/src/toastify.css"; */
+@import '@kui-dashboard/alpinejs-plugin/dist/main.css';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
