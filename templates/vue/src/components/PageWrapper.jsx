@@ -1,4 +1,5 @@
 import { defineComponent } from 'vue'
+import PageHeader from './PageHeader'
 
 export default defineComponent({
     props: {
@@ -14,9 +15,7 @@ export default defineComponent({
                         {slots.header ? (
                             slots.header()
                         ) : (
-                            <h2 class="text-xl font-semibold leading-tight">
-                                {props.title}
-                            </h2>
+                            <PageHeader title={props.title} />
                         )}
                     </header>
                 )}

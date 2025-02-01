@@ -10,7 +10,7 @@ const Header = defineComponent({
 
                 <Button
                     target="_blank"
-                    href="https://github.com/kamona-ui/kui-dashboard"
+                    href="https://github.com/kamona-ui/kui-dashboard/tree/main/templates/vue#readme"
                     variant="black"
                     class="max-w-sm justify-center gap-2"
                     startIcon="tabler--brand-github"

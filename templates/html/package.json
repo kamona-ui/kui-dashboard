@@ -1,9 +1,10 @@
 {
     "name": "kui-dashboard-html",
+    "description": "Admin dashboard template built with tailwindcss & alpinejs.",
     "version": "0.1.0",
     "license": "MIT",
-    "description": "Admin dashboard template built with tailwindcss & alpinejs.",
     "type": "module",
+    "private": true,
     "author": {
         "name": "Ahmed Kamel",
         "email": "ak3849909@gmail.com",

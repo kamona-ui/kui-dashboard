@@ -1,9 +1,10 @@
 {
     "name": "home-page",
+    "description": "Admin dashboard template built with tailwindcss.",
     "version": "0.1.0",
-    "private": true,
-    "type": "module",
     "license": "MIT",
+    "type": "module",
+    "private": true,
     "author": {
         "name": "Ahmed KAmel",
         "email": "ak3849909@gmail.com",

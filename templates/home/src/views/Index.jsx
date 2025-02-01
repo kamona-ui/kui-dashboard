@@ -95,27 +95,7 @@ const CTAButtons = defineComponent({
     setup() {
         return () => (
             <div class="flex flex-col items-center justify-center gap-6 lg:flex-row">
-                <Button
-                    href="https://kamona-ui.github.io/kui-dashboard-vue"
-                    target="_blank"
-                    variant="black"
-                >
-                    {({ iconSizeClasses }) => (
-                        <>
-                            <VueJsIcon
-                                aria-hidden="true"
-                                class={[iconSizeClasses]}
-                            />
-                            <span class="whitespace-nowrap">Vue</span>
-                        </>
-                    )}
-                </Button>
-
-                <Button
-                    href="https://kamona-ui.github.io/kui-dashboard-html"
-                    target="_blank"
-                    variant="black"
-                >
+                <Button href="html/index.html" variant="black">
                     {({ iconSizeClasses }) => (
                         <>
                             <HtmlIcon
@@ -123,6 +103,18 @@ const CTAButtons = defineComponent({
                                 class={[iconSizeClasses]}
                             />
                             <span class="whitespace-nowrap">Html</span>
+                        </>
+                    )}
+                </Button>
+
+                <Button href="vue/index.html" variant="black">
+                    {({ iconSizeClasses }) => (
+                        <>
+                            <VueJsIcon
+                                aria-hidden="true"
+                                class={[iconSizeClasses]}
+                            />
+                            <span class="whitespace-nowrap">Vue</span>
                         </>
                     )}
                 </Button>
@@ -219,7 +211,7 @@ export default defineComponent({
                                         />
                                     </div>
 
-                                    {/* <CTAButtons /> */}
+                                    <CTAButtons />
                                     <Button
                                         target="_blank"
                                         href="https://github.com/kamona-ui/kui-dashboard"

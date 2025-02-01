@@ -6,6 +6,8 @@ import vueJSX from '@vitejs/plugin-vue-jsx'
 export default defineConfig({
     plugins: [vueJSX()],
 
+    base: '/kui-dashboard/',
+
     resolve: {
         alias: {
             '@': resolve(__dirname, 'src'),

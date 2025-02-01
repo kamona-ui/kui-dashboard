@@ -2,6 +2,14 @@
 
 > ⚠️ This template is not finished yet. 
 
+### [Live preview](https://kamona-ui.github.io/kui-dashboard/)
+
+##### [HTML version](https://github.com/kamona-ui/kui-dashboard/html/)
+
+##### [Vue version](https://github.com/kamona-ui/kui-dashboard/vue/)
+
+##### [Laravel package](https://github.com/Kamona-WD/kui-laravel-breeze/)
+
 |     |     |
 | --- | --- |
 | ![Desktop light](/showcase/desktop-light.svg) | ![Mobile light](/showcase/mobile-light.svg) |
@@ -21,9 +29,11 @@ cd kui-dashboard
 yarn install # Using npm
 
 # 3. Start the development server:
-yarn html:dev # For html template
+yarn dev:home # For home page
 # Or
-yarn vue:dev # For vue template
+yarn dev:html # For html template
+# Or
+yarn dev:vue # For vue template
 ```
 
 ## Support

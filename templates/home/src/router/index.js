@@ -3,7 +3,7 @@ import NProgress from 'nprogress'
 import routes from '@/router/routes'
 
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHistory('kui-dashboard'),
     routes,
 })
 

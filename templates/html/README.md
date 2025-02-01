@@ -2,6 +2,17 @@
 
 > ⚠️ This template is not finished yet.
 
+### [Live preview](https://kamona-ui.github.io/kui-dashboard/)
+
+##### [Vue version](https://github.com/kamona-ui/kui-dashboard/vue/)
+
+##### [Laravel package](https://github.com/Kamona-WD/kui-laravel-breeze/)
+
+|                                                    |                                                  |
+| -------------------------------------------------- | ------------------------------------------------ |
+| ![Desktop light](../../showcase/desktop-light.svg) | ![Mobile light](../../showcase/mobile-light.svg) |
+| ![Desktop dark](../../showcase/desktop-dark.svg)   | ![Mobile dark](../../showcase/mobile-dark.svg)   |
+
 ##### To get started:
 
 ```bash
@@ -11,19 +22,19 @@ git clone https://github.com/kamona-ui/kui-dashboard.git
 cd kui-dashboard
 
 # 2. Install the dependencies:
-yarn install # Using npm
+yarn install
 
 # 3. Start the development server:
-yarn html:dev
+yarn dev:html
 ```
 
 ##### Build
 
 ```bash
-yarn html:build
+yarn build:html
 
 # Preview
-yarn html:previw
+yarn preview:html
 ```
 
 ---

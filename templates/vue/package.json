@@ -1,9 +1,10 @@
 {
     "name": "kui-dashboard-vue",
-    "version": "0.1.0",
-    "type": "module",
     "description": "Admin dashboard template built with tailwindcss & vuejs.",
+    "version": "0.1.0",
     "license": "MIT",
+    "type": "module",
+    "private": true,
     "author": {
         "name": "Ahmed Kamel",
         "email": "ak3849909@gmail.com",
