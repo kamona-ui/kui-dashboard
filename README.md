@@ -26,7 +26,7 @@ git clone https://github.com/kamona-ui/kui-dashboard.git
 cd kui-dashboard
 
 # 2. Install the dependencies:
-yarn install # Using npm
+yarn install
 
 # 3. Start the development server:
 yarn dev:home # For home page
@@ -34,6 +34,10 @@ yarn dev:home # For home page
 yarn dev:html # For html template
 # Or
 yarn dev:vue # For vue template
+# Or
+yarn dev:tw # For tailwindcss plugin
+# Or
+yarn dev:alpine # For alpinejs plugin
 ```
 
 ## Support

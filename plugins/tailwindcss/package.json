@@ -38,13 +38,15 @@
     "scripts": {
         "dev": "node build --watch",
         "build": "node build",
-        "format": "prettier --write"
+        "prebuild": "rimraf dist",
+        "format": "prettier --write \"src\""
     },
     "peerDependencies": {
         "tailwindcss": "^3.4.17"
     },
     "devDependencies": {
         "esbuild": "^0.24.2",
-        "prettier": "^3.4.2"
+        "prettier": "^3.4.2",
+        "rimraf": "^6.0.1"
     }
 }

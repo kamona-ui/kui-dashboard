@@ -14,13 +14,8 @@
 
 <!-- Sidebar -->
 <aside
-    x-sidebar
+    x-kui-layout:sidebar
     class="fixed inset-y-0 z-40 flex w-64 -translate-x-full flex-col gap-6 bg-white py-3 shadow-lg transition-all duration-200 dark:bg-dark-1 md:transition-[width] lg:translate-x-0"
-    :class="{
-        'translate-x-0 w-64': isOpen || isHovered,
-        '-translate-x-full w-64 md:w-16 md:translate-x-0': !isOpen && !isHovered,
-    }"
-    @resize.window="handleWindowResize"
 >
     <!-- Sidebar header -->
     <div class="flex flex-shrink-0 items-center justify-between px-3">
