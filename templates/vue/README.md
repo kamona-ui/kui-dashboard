@@ -4,7 +4,7 @@
 
 ### [Live preview](https://kamona-ui.github.io/kui-dashboard/)
 
-##### [HTML version](https://github.com/kamona-ui/kui-dashboard/html/)
+##### [HTML version](https://github.com/kamona-ui/kui-dashboard/tree/main/templates/html#readme)
 
 ##### [Laravel package](https://github.com/Kamona-WD/kui-laravel-breeze/)
 
