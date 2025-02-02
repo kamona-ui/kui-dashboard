@@ -1,6 +1,6 @@
 import { defineComponent } from 'vue'
 import PageWrapper from '@/components/PageWrapper'
-import Button from '@/components/Button'
+import { KuiButton } from '@kui-dashboard/vue-plugin'
 
 const Header = defineComponent({
     setup() {
@@ -8,11 +8,11 @@ const Header = defineComponent({
             <>
                 <h2 class="text-xl font-semibold leading-tight">Dashboard</h2>
 
-                <Button
-                    target="_blank"
+                <KuiButton
+                    external
                     href="https://github.com/kamona-ui/kui-dashboard/tree/main/templates/vue#readme"
                     variant="black"
-                    class="max-w-sm justify-center gap-2"
+                    class="max-w-sm"
                     startIcon="tabler--brand-github"
                     text="Star on github"
                 />

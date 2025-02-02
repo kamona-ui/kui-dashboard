@@ -1,7 +1,7 @@
 import { defineComponent } from 'vue'
 import { RouterLink } from 'vue-router'
 import Logo from '@/components/Logo'
-import Button from '@/components/Button'
+import { KuiButton } from '@kui-dashboard/vue-plugin'
 import {
     MenuFoldLineLeftIcon,
     MenuFoldLineRightIcon,
@@ -17,11 +17,11 @@ export default defineComponent({
                     <Logo aria-hidden="true" class="h-auto w-10" />
                 </RouterLink>
 
-                <Button
+                <KuiButton
                     class="p-2"
                     variant="transparent"
                     v-show={sidebarState.isOpen || sidebarState.isHovered}
-                    srText={
+                    sr-text={
                         sidebarState.isOpen ? 'Close sidebar' : 'Open sidebar'
                     }
                     onClick={() => {
@@ -51,7 +51,7 @@ export default defineComponent({
                             ></span>
                         </>
                     )}
-                </Button>
+                </KuiButton>
             </div>
         )
     },

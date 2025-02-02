@@ -38,6 +38,8 @@ yarn dev:vue # For vue template
 yarn dev:tw # For tailwindcss plugin
 # Or
 yarn dev:alpine # For alpinejs plugin
+# Or
+yarn dev:vue-plugin # For vue plugin
 ```
 
 ## Support

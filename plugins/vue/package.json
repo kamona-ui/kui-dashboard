@@ -1,0 +1,85 @@
+{
+    "name": "@kui-dashboard/vue-plugin",
+    "version": "0.1.0",
+    "description": "K-UI dashboard template's vuejs plugin.",
+    "license": "MIT",
+    "private": false,
+    "publishConfig": {
+        "access": "public"
+    },
+    "type": "module",
+    "author": {
+        "name": "Ahmed Kamel",
+        "email": "ak3849909@gmail.com",
+        "url": "https://github.com/Kamona-WD"
+    },
+    "keywords": [
+        "dashboard",
+        "tailwindcss",
+        "layout",
+        "vue",
+        "vuejs",
+        "admin",
+        "template"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kamona-ui/kui-dashboard",
+        "directory": "plugins/vue-plugin"
+    },
+    "bugs": {
+        "url": "https://github.com/kamona-ui/kui-dashboard/issues"
+    },
+    "main": "dist/kui-dashboard.umd.cjs",
+    "module": "dist/kui-dashboard.js",
+    "style": "dist/main.css",
+    "files": [
+        "src/**/*.js",
+        "dist/**/*.js",
+        "dist/*.css"
+    ],
+    "exports": {
+        ".": {
+            "require": "./dist/kui-dashboard.umd.cjs",
+            "import": "./dist/kui-dashboard.js"
+        },
+        "./dist/kui-dashboard.css": {
+            "import": "./dist/kui-dashboard.css",
+            "require": "./dist/kui-dashboard.css"
+        }
+    },
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "build:css": "tailwindcss -i ./src/css/lib.css -o ./dist/kui-dashboard.css -m",
+        "postbuild": "run-s build:css"
+    },
+    "dependencies": {
+        "@headlessui/vue": "^1.7.23",
+        "vue": "^3.5.5"
+    },
+    "peerDependencies": {
+        "@headlessui/vue": "^1.7.23",
+        "vue": "^3.5.5"
+    },
+    "optionalDependencies": {
+        "vue-router": "^4.0.12"
+    },
+    "devDependencies": {
+        "@iconify-json/tabler": "^1.2.15",
+        "@iconify/tailwind": "^1.2.0",
+        "@kui-dashboard/tailwindcss-plugin": "*",
+        "@tailwindcss/forms": "^0.5.9",
+        "@vitejs/plugin-vue": "^5.2.1",
+        "@vitejs/plugin-vue-jsx": "^4.1.1",
+        "autoprefixer": "^10.4.20",
+        "postcss": "^8.4.47",
+        "prettier": "^3.4.2",
+        "prettier-plugin-tailwindcss": "^0.6.11",
+        "npm-run-all": "^4.1.5",
+        "tailwind-merge": "^2.6.0",
+        "tailwindcss": "^3.4.11",
+        "vite": "^6.0.11"
+    }
+}
