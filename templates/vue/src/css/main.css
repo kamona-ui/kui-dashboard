@@ -1,6 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import '@kui-dashboard/vue-plugin/dist/kui-dashboard.css';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 #nprogress {
     pointer-events: none;

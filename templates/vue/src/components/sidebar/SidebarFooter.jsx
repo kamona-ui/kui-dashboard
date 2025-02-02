@@ -1,5 +1,5 @@
 import { defineComponent } from 'vue'
-import Button from '@/components/Button'
+import { KuiButton } from '@kui-dashboard/vue-plugin'
 import {
     MenuFoldLineLeftIcon,
     MenuFoldLineRightIcon,
@@ -10,7 +10,7 @@ export default defineComponent({
     setup() {
         return () => (
             <div class="flex-shrink-0 px-3 lg:hidden">
-                <Button
+                <KuiButton
                     class="p-2"
                     variant="transparent"
                     v-show={!sidebarState.isOpen}
@@ -36,7 +36,7 @@ export default defineComponent({
                             />
                         </>
                     )}
-                </Button>
+                </KuiButton>
             </div>
         )
     },

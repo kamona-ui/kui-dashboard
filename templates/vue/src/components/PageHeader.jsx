@@ -1,5 +1,5 @@
 import { defineComponent } from 'vue'
-import Button from '@/components/Button'
+import { KuiButton } from '@kui-dashboard/vue-plugin'
 
 export default defineComponent({
     props: {
@@ -15,11 +15,11 @@ export default defineComponent({
                 {slots.default ? (
                     slots.default()
                 ) : (
-                    <Button
-                        target="_blank"
+                    <KuiButton
+                        external
                         href="https://github.com/kamona-ui/kui-dashboard/tree/main/templates/vue#readme"
                         variant="black"
-                        class="max-w-sm justify-center gap-2"
+                        class="max-w-sm"
                         startIcon="tabler--brand-github"
                         text="Star on github"
                     />

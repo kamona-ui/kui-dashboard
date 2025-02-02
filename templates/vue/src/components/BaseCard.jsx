@@ -1,5 +1,5 @@
 import { defineComponent } from 'vue'
-import Button from '@/components/Button'
+import { KuiButton } from '@kui-dashboard/vue-plugin'
 import Dropdown, { DropdownItem } from '@/components/Dropdown'
 
 export default defineComponent({
@@ -41,10 +41,10 @@ export default defineComponent({
                                 width="48"
                                 v-slots={{
                                     trigger: () => (
-                                        <Button
+                                        <KuiButton
                                             size="sm"
                                             variant="transparent"
-                                            srText="Card actions"
+                                            sr-text="Card actions"
                                             icon="tabler--dots"
                                         />
                                     ),

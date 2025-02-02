@@ -7,7 +7,7 @@ import {
     toggleDarkMode,
     sidebarState,
 } from '@/composables'
-import Button from '@/components/Button'
+import { KuiButton } from '@kui-dashboard/vue-plugin'
 import Logo from '@/components/Logo'
 import Dropdown, { DropdownItem } from '@/components/Dropdown'
 
@@ -23,9 +23,9 @@ export const MobileBottomBar = defineComponent({
                     },
                 ]}
             >
-                <Button
+                <KuiButton
                     variant="transparent"
-                    srText="Search"
+                    sr-text="Search"
                     icon="tabler--search"
                 />
 
@@ -34,13 +34,13 @@ export const MobileBottomBar = defineComponent({
                     <span class="sr-only">K UI</span>
                 </RouterLink>
 
-                <Button
+                <KuiButton
                     variant="transparent"
                     onClick={() => {
                         sidebarState.isOpen = !sidebarState.isOpen
                     }}
                     class="p-2"
-                    srText="Open navigation menu"
+                    sr-text="Open navigation menu"
                     icon="tabler--menu-3"
                 />
             </div>
@@ -77,7 +77,7 @@ export default defineComponent({
                             width="48"
                             v-slots={{
                                 trigger: () => (
-                                    <Button
+                                    <KuiButton
                                         variant="transparent"
                                         icon="tabler--sparkles"
                                         sr-text="Quick actions"
@@ -107,44 +107,22 @@ export default defineComponent({
                             />
                         </Dropdown>
 
-                        <Button
+                        <KuiButton
                             variant="transparent"
-                            srText="Search"
+                            sr-text="Search"
                             icon="tabler--search"
                             class="hidden md:inline-flex"
                         />
                     </div>
 
                     <div class="flex items-center gap-2">
-                        <Button
+                        <KuiButton
                             variant="transparent"
-                            type="button"
                             onClick={toggleDarkMode}
-                            class="hidden p-2 md:inline-flex"
-                            srText="Toggle dark mode"
-                        >
-                            {({ iconSizeClasses }) => (
-                                <>
-                                    <span
-                                        v-show={!isDark.value}
-                                        aria-hidden="true"
-                                        class={[
-                                            'iconify tabler--moon',
-                                            iconSizeClasses,
-                                        ]}
-                                    ></span>
-
-                                    <span
-                                        v-show={isDark.value}
-                                        aria-hidden="true"
-                                        class={[
-                                            'iconify tabler--sun',
-                                            iconSizeClasses,
-                                        ]}
-                                    ></span>
-                                </>
-                            )}
-                        </Button>
+                            class="hidden md:inline-flex"
+                            sr-text="Toggle dark mode"
+                            icon={isDark.value? 'tabler--sun' : 'tabler--moon'}
+                        />
 
                         {/* User dropdown */}
                         <Dropdown
@@ -152,7 +130,7 @@ export default defineComponent({
                             width="48"
                             v-slots={{
                                 trigger: () => (
-                                    <Button
+                                    <KuiButton
                                         variant="transparent"
                                         class="overflow-hidden p-0"
                                     >
@@ -161,7 +139,7 @@ export default defineComponent({
                                             src="images/avatar.jpeg"
                                             alt="Ahmed Kamel"
                                         />
-                                    </Button>
+                                    </KuiButton>
                                 ),
                             }}
                         >
