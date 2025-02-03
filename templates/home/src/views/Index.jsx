@@ -15,7 +15,8 @@ import mobileDark from '@/assets/images/showcase/mobile-dark.svg'
 import mobileDark2 from '@/assets/images/showcase/mobile-dark-2.svg'
 import mobileLight from '@/assets/images/showcase/mobile-light.svg'
 import mobileLight2 from '@/assets/images/showcase/mobile-light-2.svg'
-import Button from '@/components/Button'
+import { KuiButton } from '@kui-dashboard/vue-plugin'
+import PageFooter from '@/components/PageFooter'
 
 const Navbar = defineComponent({
     setup() {
@@ -58,33 +59,13 @@ const Navbar = defineComponent({
                     </a>
 
                     {/* Dark mode button */}
-                    <Button
+                    <KuiButton
                         onClick={() => {
                             toggleDarkMode()
                         }}
-                        type="button"
                         variant="black"
-                        class="p-2"
-                    >
-                        {({ iconSizeClasses }) => (
-                            <>
-                                <span
-                                    v-show={!isDark.value}
-                                    class={[
-                                        'iconify tabler--moon',
-                                        iconSizeClasses,
-                                    ]}
-                                ></span>
-                                <span
-                                    v-show={isDark.value}
-                                    class={[
-                                        'iconify tabler--sun',
-                                        iconSizeClasses,
-                                    ]}
-                                ></span>
-                            </>
-                        )}
-                    </Button>
+                        icon={!isDark.value ? 'tabler--moon' : 'tabler--sun'}
+                    />
                 </div>
             </nav>
         )
@@ -95,33 +76,35 @@ const CTAButtons = defineComponent({
     setup() {
         return () => (
             <div class="flex flex-col items-center justify-center gap-6 lg:flex-row">
-                <Button href="html/index.html" variant="black">
+                <KuiButton external href="html/index.html" variant="black">
                     {({ iconSizeClasses }) => (
                         <>
                             <HtmlIcon
                                 aria-hidden="true"
                                 class={[iconSizeClasses]}
                             />
+
                             <span class="whitespace-nowrap">Html</span>
                         </>
                     )}
-                </Button>
+                </KuiButton>
 
-                <Button href="vue/index.html" variant="black">
+                <KuiButton external href="vue/index.html" variant="black">
                     {({ iconSizeClasses }) => (
                         <>
                             <VueJsIcon
                                 aria-hidden="true"
                                 class={[iconSizeClasses]}
                             />
+
                             <span class="whitespace-nowrap">Vue</span>
                         </>
                     )}
-                </Button>
+                </KuiButton>
 
-                <Button
+                <KuiButton
+                    external
                     href="https://github.com/kamona-wd/kui-laravel-breeze"
-                    target="_blank"
                     variant="black"
                 >
                     {({ iconSizeClasses }) => (
@@ -130,10 +113,11 @@ const CTAButtons = defineComponent({
                                 aria-hidden="true"
                                 class={[iconSizeClasses]}
                             />
+
                             <span class="whitespace-nowrap">Laravel</span>
                         </>
                     )}
-                </Button>
+                </KuiButton>
             </div>
         )
     },
@@ -158,7 +142,7 @@ export default defineComponent({
         })
 
         return () => (
-            <div class="min-h-screen bg-gray-100 text-gray-900 dark:bg-dark-0">
+            <div class="min-h-screen dark:bg-dark-0">
                 <Navbar />
 
                 <main>
@@ -212,12 +196,12 @@ export default defineComponent({
                                     </div>
 
                                     <CTAButtons />
-                                    <Button
-                                        target="_blank"
+
+                                    <KuiButton
+                                        external
                                         href="https://github.com/kamona-ui/kui-dashboard"
                                         variant="black"
-                                        class="max-w-sm justify-center gap-2"
-                                        startIcon="tabler--brand-github"
+                                        start-icon="tabler--brand-github"
                                         text="Star on github"
                                     />
                                 </div>
@@ -244,6 +228,10 @@ export default defineComponent({
                         </div>
                     </section>
                 </main>
+
+                <div class="container mx-auto p-6">
+                    <PageFooter />
+                </div>
             </div>
         )
     },

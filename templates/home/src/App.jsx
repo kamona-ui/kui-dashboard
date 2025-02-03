@@ -7,16 +7,18 @@ export default defineComponent({
         onMounted(() => {
             gsap.to('#loading .logo', { y: -50, opacity: 0, duration: 0.5 })
             gsap.to('#loading .left', {
-                rotateY: 45,
-                x: '-130%',
-                duration: 1,
+                // rotateY: 45,
+                // x: '-130%',
+                // duration: 1,
                 delay: 0.6,
+                opacity: 0
             })
             gsap.to('#loading .right', {
-                rotateY: -45,
-                x: '130%',
-                duration: 1,
+                // rotateY: -45,
+                // x: '130%',
+                // duration: 1,
                 delay: 0.6,
+                opacity: 0,
                 onComplete: () => {
                     document.getElementById('loading')?.remove()
                 },

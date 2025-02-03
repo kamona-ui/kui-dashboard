@@ -1,8 +1,12 @@
 <!-- Footer -->
 <footer class="flex w-full flex-shrink-0 flex-col items-center gap-2 lg:flex-row lg:justify-between">
-    <div x-data class="text-sm text-gray-500 dark:text-gray-400">
-        ©<span x-text="new Date().getFullYear()"></span>
-        K UI, All rights reserved
+    <div class="flex items-center gap-1">
+        {{> partials/logo className="w-6 h-auto" }}
+
+        <p x-data class="text-sm text-gray-500 dark:text-gray-400">
+            ©<span x-text="new Date().getFullYear()"></span>
+            K UI, All rights reserved
+        </p>
     </div>
 
     <div class="flex items-center gap-1 text-sm text-gray-500 dark:text-gray-400">
