@@ -1,6 +1,6 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
-const colors = require('tailwindcss/colors')
-const plugin = require('tailwindcss/plugin')
+import defaultTheme from 'tailwindcss/defaultTheme'
+import colors from 'tailwindcss/colors'
+import plugin from 'tailwindcss/plugin'
 
 const opts = {
     colorVars: {
@@ -86,9 +86,9 @@ const opts = {
     },
 }
 
-module.exports.primaryColor = opts.colorVars['--color-primary']
+export const primaryColor = opts.colorVars['--color-primary']
 
-module.exports = plugin.withOptions(
+export default plugin.withOptions(
     function (options = {}) {
         const { colorVars = opts.colorVars } = options
 

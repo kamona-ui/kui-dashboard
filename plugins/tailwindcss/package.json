@@ -25,6 +25,7 @@
         "url": "https://github.com/kamona-ui/kui-dashboard/issues"
     },
     "main": "dist/index.cjs",
+    "module": "dist/index.js",
     "files": [
         "dist/**/*",
         "src/**/*"
@@ -32,7 +33,7 @@
     "exports": {
         ".": {
             "require": "./dist/index.cjs",
-            "import": "./dist/index.cjs"
+            "import": "./dist/index.js"
         }
     },
     "scripts": {
