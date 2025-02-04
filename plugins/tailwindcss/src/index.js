@@ -102,7 +102,6 @@ export default plugin.withOptions(
     function (options = {}) {
         const {
             primaryColors = opts.colors.primary,
-            secondaryColors = opts.colors.secondary,
             successColors = opts.colors.success,
             warningColors = opts.colors.warning,
             dangerColors = opts.colors.danger,
