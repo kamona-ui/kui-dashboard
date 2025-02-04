@@ -1,1 +1,0 @@
-import{P as t}from"./PageWrapper-DeTF7Ki1.js";import{d as e,c as o}from"./index-CBseeZv-.js";import"./Button-rqMvxarp.js";const p=e({setup(){return()=>o(t,{title:"Buttons"},null)}});export{p as default};

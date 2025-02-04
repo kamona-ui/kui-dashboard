@@ -1,0 +1,1 @@
+import{P as r}from"./PageWrapper-DY4-r--n.js";import{d as t,u as o,c as a}from"./index-D2Dl0XwX.js";import"./kui-dashboard-y7b02QrS.js";const c=t({setup(){const e=o();return()=>a(r,{title:"Dashboard",breadcrumb:e.currentRoute.value.meta.breadcrumb},null)}});export{c as default};
