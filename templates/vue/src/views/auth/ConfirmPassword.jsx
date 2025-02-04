@@ -1,8 +1,5 @@
 import { defineComponent, reactive, withModifiers } from 'vue'
-import InputIconWrapper from '@/components/InputIconWrapper'
-import Button from '@/components/Button'
-import Input from '@/components/Input'
-import Label from '@/components/Label'
+import { KuiInput, KuiButton } from '@kui-dashboard/vue-plugin'
 
 export default defineComponent({
     setup() {
@@ -24,33 +21,26 @@ export default defineComponent({
 
                 {/* Password input */}
                 <div class="grid gap-4">
-                    <div class="space-y-2">
-                        <Label for="password" value="Password" />
-                        <InputIconWrapper icon="tabler--lock">
-                            <Input
-                                withIcon
-                                id="password"
-                                type="password"
-                                class="block w-full"
-                                placeholder="Password"
-                                v-model={confirmPasswordForm.password}
-                                required
-                                autocomplete="current-password"
-                                autofocus
-                            />
-                        </InputIconWrapper>
-                    </div>
+                    <KuiInput
+                        label="Password"
+                        icon="tabler--lock"
+                        id="password"
+                        type="password"
+                        class="block w-full"
+                        placeholder="Password"
+                        v-model={confirmPasswordForm.password}
+                        required
+                        autocomplete="current-password"
+                        autofocus
+                    />
 
                     {/* Submit button */}
-                    <div>
-                        <Button
-                            type="submit"
-                            class="w-full justify-center"
-                            disabled={confirmPasswordForm.processing}
-                        >
-                            Confirm
-                        </Button>
-                    </div>
+                    <KuiButton
+                        type="submit"
+                        class="w-full justify-center"
+                        disabled={confirmPasswordForm.processing}
+                        text="Confirm"
+                    />
                 </div>
             </form>
         )

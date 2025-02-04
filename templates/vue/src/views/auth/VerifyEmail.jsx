@@ -1,5 +1,5 @@
 import { defineComponent, reactive, ref, withModifiers } from 'vue'
-import Button from '@/components/Button'
+import { KuiButton } from '@kui-dashboard/vue-plugin'
 import { RouterLink } from 'vue-router'
 
 export default defineComponent({
@@ -33,12 +33,11 @@ export default defineComponent({
 
                 <form onSubmit={withModifiers(submit, ['prevent'])}>
                     <div class="mt-4 flex items-center justify-between">
-                        <Button
+                        <KuiButton
                             type="submit"
                             disabled={verifyEmailForm.processing}
-                        >
-                            Resend Verification Email
-                        </Button>
+                            text="Resend Verification Email"
+                        />
 
                         <RouterLink
                             to="#"
