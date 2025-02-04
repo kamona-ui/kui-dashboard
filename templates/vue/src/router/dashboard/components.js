@@ -1,3 +1,5 @@
+import buttons from '@/support/data/components/buttons';
+
 export default {
     path: '/components/',
     children: [
@@ -5,6 +7,9 @@ export default {
             path: 'buttons',
             name: 'Buttons',
             component: () => import('@/views/components/Buttons'),
+            meta: {
+                breadcrumb: buttons.breadcrumb
+            }
         },
     ],
 }
