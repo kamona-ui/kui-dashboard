@@ -1,3 +1,5 @@
+import blank from '@/support/data/pages/blank'
+
 export default {
     path: '/pages/',
     children: [
@@ -5,6 +7,9 @@ export default {
             path: 'blank',
             name: 'Blank',
             component: () => import('@/views/pages/Blank'),
+            meta: {
+                breadcrumb: blank.breadcrumb,
+            },
         },
     ],
 }

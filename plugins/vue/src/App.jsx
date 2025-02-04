@@ -62,26 +62,26 @@ export default defineComponent({
 
                 <div class="grid gap-4">
                     {inputVariants.map((v, i) => (
-                        <Input 
-                            key={i} 
-                            variant={v} 
+                        <Input
+                            key={i}
+                            variant={v}
                             label="User name"
-                            icon="tabler--user" 
+                            icon="tabler--user"
                             placeholder="User name"
                         />
                     ))}
                 </div>
 
                 <div class="grid gap-4">
-                    <DatePicker 
+                    <DatePicker
                         label="Date"
-                        icon="tabler--calendar" 
+                        icon="tabler--calendar"
                         placeholder="Date"
                         v-model={today.value}
                         helper-message={today.value}
                     />
 
-                    <DatePicker 
+                    <DatePicker
                         label="Date"
                         placeholder="Date"
                         v-model={today.value}

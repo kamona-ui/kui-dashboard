@@ -28,6 +28,7 @@
     "dependencies": {
         "@headlessui/vue": "^1.7.23",
         "@vueuse/core": "^7.5.5",
+        "apexcharts": "^4.4.0",
         "gsap": "^3.9.1",
         "nprogress": "^0.2.0",
         "perfect-scrollbar": "^1.5.5",
@@ -39,11 +40,11 @@
     "devDependencies": {
         "@iconify-json/tabler": "^1.2.15",
         "@iconify/tailwind": "^1.2.0",
+        "@kui-dashboard/tailwindcss-plugin": "*",
+        "@kui-dashboard/vue-plugin": "*",
         "@tailwindcss/forms": "^0.5.9",
         "@vitejs/plugin-vue": "^5.2.1",
         "@vitejs/plugin-vue-jsx": "^4.1.1",
-        "@kui-dashboard/tailwindcss-plugin": "*",
-        "@kui-dashboard/vue-plugin": "*",
         "apexcharts": "^4.4.0",
         "autoprefixer": "^10.4.20",
         "postcss": "^8.4.47",

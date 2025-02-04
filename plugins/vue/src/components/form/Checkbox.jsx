@@ -43,9 +43,9 @@ export default defineComponent({
                         'dark:focus:ring-offset-dark-1',
                         'checked:bg-primary dark:checked:bg-primary',
                         {
-                            'transform scale-110': props.size == 'sm',
-                            'transform scale-125': props.size == 'base',
-                            'transform scale-150': props.size == 'lg',
+                            'scale-110 transform': props.size == 'sm',
+                            'scale-125 transform': props.size == 'base',
+                            'scale-150 transform': props.size == 'lg',
                         },
                     ]}
                     value={value}

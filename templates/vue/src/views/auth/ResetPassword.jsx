@@ -38,7 +38,7 @@ export default defineComponent({
 
                     {/* Password input */}
                     <KuiInput
-                        label="Password" 
+                        label="Password"
                         icon="tabler--lock"
                         id="password"
                         type="password"
@@ -57,9 +57,7 @@ export default defineComponent({
                         type="password"
                         class="block w-full"
                         placeholder="Confirm Password"
-                        v-model={
-                            resetPasswordForm.password_confirmation
-                        }
+                        v-model={resetPasswordForm.password_confirmation}
                         required
                         autocomplete="new-password"
                     />

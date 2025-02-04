@@ -1,5 +1,5 @@
 import { defineComponent, reactive, withModifiers } from 'vue'
-import { KuiButton, KuiInput, KuiCheckbox } from '@kui-dashboard/vue-plugin' 
+import { KuiButton, KuiInput, KuiCheckbox } from '@kui-dashboard/vue-plugin'
 import { RouterLink } from 'vue-router'
 
 export default defineComponent({

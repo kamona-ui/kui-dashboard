@@ -46,6 +46,7 @@ export default defineComponent({
                                             variant="transparent"
                                             sr-text="Card actions"
                                             icon="tabler--dots"
+                                            class="z-10"
                                         />
                                     ),
                                 }}
