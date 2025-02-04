@@ -119,7 +119,6 @@ export default plugin.withOptions(
                     colors: {
                         dark: darkColor,
                         primary: primaryColors,
-                        secondary: secondaryColors,
                         success: successColors,
                         warning: warningColors,
                         danger: dangerColors,
