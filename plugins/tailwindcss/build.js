@@ -7,7 +7,15 @@ bundle()
 
 async function bundle() {
     await build({
-        entryPoints: [`${srcDir}/index.cjs`],
+        entryPoints: [`${srcDir}/index.js`],
+        outfile: `${outDir}/index.js`,
+        bundle: true,
+        platform: 'neutral',
+        mainFields: ['module', 'main'],
+    })
+
+    await build({
+        entryPoints: [`${srcDir}/index.js`],
         outfile: `${outDir}/index.cjs`,
         bundle: true,
         target: ['node10.4'],

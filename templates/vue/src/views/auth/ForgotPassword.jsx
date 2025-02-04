@@ -1,8 +1,5 @@
 import { defineComponent, reactive, withModifiers } from 'vue'
-import InputIconWrapper from '@/components/InputIconWrapper'
-import Button from '@/components/Button'
-import Input from '@/components/Input'
-import Label from '@/components/Label'
+import { KuiInput, KuiButton } from '@kui-dashboard/vue-plugin'
 
 export default defineComponent({
     setup() {
@@ -26,32 +23,26 @@ export default defineComponent({
                 <form onSubmit={withModifiers(submit, ['prevent'])}>
                     <div class="grid gap-6">
                         {/* Email input */}
-                        <div class="space-y-2">
-                            <Label for="email" value="Email" />
-                            <InputIconWrapper icon="tabler--mail">
-                                <Input
-                                    withIcon
-                                    id="email"
-                                    type="email"
-                                    class="block w-full"
-                                    placeholder="Email"
-                                    v-model={forgotPasswordForm.email}
-                                    required
-                                    autofocus
-                                    autocomplete="username"
-                                />
-                            </InputIconWrapper>
-                        </div>
+                        <KuiInput
+                            label="Email"
+                            icon="tabler--mail"
+                            id="email"
+                            type="email"
+                            class="block w-full"
+                            placeholder="Email"
+                            v-model={forgotPasswordForm.email}
+                            required
+                            autofocus
+                            autocomplete="username"
+                        />
 
                         {/* Submit button */}
-                        <div>
-                            <Button
-                                type="submit"
-                                class="w-full justify-center gap-2"
-                                disabled={forgotPasswordForm.processing}
-                                text="Email Password Reset Link"
-                            />
-                        </div>
+                        <KuiButton
+                            type="submit"
+                            class="w-full justify-center gap-2"
+                            disabled={forgotPasswordForm.processing}
+                            text="Email Password Reset Link"
+                        />
                     </div>
                 </form>
             </>
