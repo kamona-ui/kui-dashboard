@@ -1,6 +1,6 @@
 {
     "name": "@kui-dashboard/tailwindcss-plugin",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "K-UI dashboard template's tailwindcss plugin.",
     "license": "MIT",
     "private": false,
