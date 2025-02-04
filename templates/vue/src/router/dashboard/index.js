@@ -10,7 +10,7 @@ export default {
         {
             path: '/',
             name: 'Dashboard',
-            component: () => import('@/views/dashboards/Analytics'),
+            component: () => import('@/views/dashboards/Ecommerce'),
             meta: {
                 breadcrumb: home.breadcrumb,
             },
