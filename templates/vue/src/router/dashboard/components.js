@@ -1,4 +1,4 @@
-import buttons from '@/support/data/components/buttons';
+import buttons from '@/support/data/components/buttons'
 
 export default {
     path: '/components/',
@@ -8,8 +8,8 @@ export default {
             name: 'Buttons',
             component: () => import('@/views/components/Buttons'),
             meta: {
-                breadcrumb: buttons.breadcrumb
-            }
+                breadcrumb: buttons.breadcrumb,
+            },
         },
     ],
 }

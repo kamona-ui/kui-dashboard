@@ -27,13 +27,12 @@ export default defineComponent({
         },
         series: {
             type: Array,
-            default: []
+            default: [],
         },
         categories: {
             type: Array || undefined,
-            default: undefined
-            
-        }
+            default: undefined,
+        },
     },
 
     setup(props, { slots }) {
@@ -182,7 +181,7 @@ export default defineComponent({
                     ),
                 }}
             >
-                <div class="relative grid grid-cols-2 gap-">
+                <div class="gap- relative grid grid-cols-2">
                     <div>
                         <h4 class="text-3xl font-semibold">{props.total}</h4>
                         <p class="text-base font-medium text-gray-500 dark:text-gray-400">
@@ -190,7 +189,7 @@ export default defineComponent({
                         </p>
                     </div>
 
-                    <div class="max-w-full flex max-h-16 items-center justify-end">
+                    <div class="flex max-h-16 max-w-full items-center justify-end">
                         <VueApexCharts
                             height={100}
                             width={100}

@@ -12,8 +12,8 @@ export default {
             name: 'Dashboard',
             component: () => import('@/views/dashboards/Analytics'),
             meta: {
-                breadcrumb: home.breadcrumb
-            }
+                breadcrumb: home.breadcrumb,
+            },
         },
         dashboards,
         components,

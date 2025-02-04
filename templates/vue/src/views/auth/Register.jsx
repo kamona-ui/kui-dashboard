@@ -103,7 +103,7 @@ export default defineComponent({
                         start-icon="tabler--user-plus"
                         text="Register"
                     />
-                    
+
                     {/* Login link */}
                     <p class="text-sm text-gray-600 dark:text-gray-400">
                         Already have an account?{' '}

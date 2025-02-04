@@ -54,11 +54,13 @@ export default defineComponent({
                     <section class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
                         <h2 class="sr-only">Quick statistics</h2>
 
-                        {quickStaticsCharts.map(chart => (
+                        {quickStaticsCharts.map((chart) => (
                             <QuickStatisticsCard
                                 icon={chart.icon}
                                 status={chart.status}
-                                series={[{ name: chart.title, data: chart.data }]}
+                                series={[
+                                    { name: chart.title, data: chart.data },
+                                ]}
                                 title={chart.title}
                                 total={chart.total}
                                 percentage={chart.percentage}
@@ -71,7 +73,7 @@ export default defineComponent({
                     <section class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
                         <h2 class="sr-only">Simple statistics</h2>
 
-                        {simpleStatistics.map(s => (
+                        {simpleStatistics.map((s) => (
                             <SimpleStatistics
                                 icon={s.icon}
                                 title={s.title}

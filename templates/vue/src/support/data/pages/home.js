@@ -1,4 +1,4 @@
-import { getRandomChartData } from "@/support/helpers";
+import { getRandomChartData } from '@/support/helpers'
 
 export default {
     breadcrumb: [

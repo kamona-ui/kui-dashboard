@@ -3,7 +3,8 @@ import Label from './Label'
 import { sizeProp, shapeProp, variantProp, shapes } from '@/support'
 import { twJoin, twMerge } from 'tailwind-merge'
 
-export const inputBaseClasses = 'w-full focus:ring focus:ring-offset-2 focus:ring-offset-white dark:bg-dark-1 dark:text-gray-300 dark:focus:ring-offset-dark-1'
+export const inputBaseClasses =
+    'w-full focus:ring focus:ring-offset-2 focus:ring-offset-white dark:bg-dark-1 dark:text-gray-300 dark:focus:ring-offset-dark-1'
 
 const inputSizeClasses = {
     sm: 'py-1 text-sm',
@@ -66,7 +67,7 @@ const BaseInput = defineComponent({
 
         expose({
             input,
-            focus
+            focus,
         })
 
         const classes = twJoin([
@@ -76,9 +77,12 @@ const BaseInput = defineComponent({
             props.shape == 'square' && 'rounded-none',
             props.shape == 'rounded' && 'rounded-md',
             props.shape == 'pill' && 'rounded-full',
-            props.size == 'sm' && (props.icon ? 'pl-8 pr-2 rtl:pl-2 rtl:pr-8' : 'px-2'),
-            props.size == 'base' && (props.icon ? 'pl-10 pr-4 rtl:pl-4 rtl:pr-10' : 'px-4'),
-            props.size == 'lg' && (props.icon ? 'pl-12 pr-6 rtl:pl-6 rtl:pr-12' : 'px-6'),
+            props.size == 'sm' &&
+                (props.icon ? 'pl-8 pr-2 rtl:pl-2 rtl:pr-8' : 'px-2'),
+            props.size == 'base' &&
+                (props.icon ? 'pl-10 pr-4 rtl:pl-4 rtl:pr-10' : 'px-4'),
+            props.size == 'lg' &&
+                (props.icon ? 'pl-12 pr-6 rtl:pl-6 rtl:pr-12' : 'px-6'),
         ])
 
         if (props.type == 'textarea') {
@@ -90,7 +94,7 @@ const BaseInput = defineComponent({
                     class={twMerge([
                         classes,
                         props.hasError && 'border-danger dark:border-danger',
-                        useAttrs().class
+                        useAttrs().class,
                     ])}
                     value={props.modelValue}
                     onInput={(e) => {
@@ -107,7 +111,7 @@ const BaseInput = defineComponent({
                 class={twMerge([
                     classes,
                     props.hasError && 'border-danger dark:border-danger',
-                    useAttrs().class
+                    useAttrs().class,
                 ])}
                 value={props.modelValue}
                 onInput={(e) => {
@@ -173,7 +177,7 @@ const Header = defineComponent({
         return () => (
             <div
                 class={[
-                    'w-full flex items-center gap-2',
+                    'flex w-full items-center gap-2',
                     props.label ? 'justify-between' : 'justify-end',
                 ]}
             >
@@ -214,7 +218,7 @@ export const InputIconWrapper = defineComponent({
                 <div
                     aria-hidden="true"
                     class={[
-                        'absolute inset-y-0 flex px-4 pointer-events-none',
+                        'pointer-events-none absolute inset-y-0 flex px-4',
                         {
                             'items-center': props.type != 'textarea',
                             'items-start py-4': props.type == 'textarea',
@@ -225,7 +229,7 @@ export const InputIconWrapper = defineComponent({
                         class={[
                             'iconify',
                             props.icon,
-                            iconSizeClasses[props.size]
+                            iconSizeClasses[props.size],
                         ]}
                     ></span>
                 </div>
@@ -277,7 +281,7 @@ export default defineComponent({
 
         if (props.icon) {
             return () => (
-                <div class="space-y-2 w-full">
+                <div class="w-full space-y-2">
                     <Header
                         label={props.label}
                         helperMessage={props.helperMessage}
@@ -305,7 +309,7 @@ export default defineComponent({
         }
 
         return () => (
-            <div class="space-y-2 w-full">
+            <div class="w-full space-y-2">
                 <Header
                     label={props.label}
                     helperMessage={props.helperMessage}

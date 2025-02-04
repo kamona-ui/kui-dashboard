@@ -121,7 +121,7 @@ export default defineComponent({
                             onClick={toggleDarkMode}
                             class="hidden md:inline-flex"
                             sr-text="Toggle dark mode"
-                            icon={isDark.value? 'tabler--sun' : 'tabler--moon'}
+                            icon={isDark.value ? 'tabler--sun' : 'tabler--moon'}
                         />
 
                         {/* User dropdown */}

@@ -11,7 +11,7 @@ export default defineComponent({
                 // x: '-130%',
                 // duration: 1,
                 delay: 0.6,
-                opacity: 0
+                opacity: 0,
             })
             gsap.to('#loading .right', {
                 // rotateY: -45,

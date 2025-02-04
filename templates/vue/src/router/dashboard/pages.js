@@ -1,4 +1,4 @@
-import blank from '@/support/data/pages/blank';
+import blank from '@/support/data/pages/blank'
 
 export default {
     path: '/pages/',
@@ -8,8 +8,8 @@ export default {
             name: 'Blank',
             component: () => import('@/views/pages/Blank'),
             meta: {
-                breadcrumb: blank.breadcrumb
-            }
+                breadcrumb: blank.breadcrumb,
+            },
         },
     ],
 }

@@ -17,7 +17,16 @@ export default {
         },
     ],
 
-    variants: ['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'white', 'black'],
+    variants: [
+        'primary',
+        'secondary',
+        'success',
+        'danger',
+        'warning',
+        'info',
+        'white',
+        'black',
+    ],
 
     sizes: ['sm', 'base', 'lg'],
 }
