@@ -40,8 +40,8 @@
     "devDependencies": {
         "@iconify-json/tabler": "^1.2.15",
         "@iconify/tailwind": "^1.2.0",
-        "@kui-dashboard/tailwindcss-plugin": "*",
-        "@kui-dashboard/vue-plugin": "*",
+        "@kui-dashboard/tailwindcss-plugin": "workspace:*",
+        "@kui-dashboard/vue-plugin": "workspace:*",
         "@tailwindcss/forms": "^0.5.9",
         "@vitejs/plugin-vue": "^5.2.1",
         "@vitejs/plugin-vue-jsx": "^4.1.1",

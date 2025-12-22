@@ -1,0 +1,7 @@
+packages:
+  - templates/*
+  - plugins/*
+
+onlyBuiltDependencies:
+  - esbuild
+  - vue-demi

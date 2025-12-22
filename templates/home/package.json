@@ -27,8 +27,8 @@
     "devDependencies": {
         "@iconify-json/tabler": "^1.2.15",
         "@iconify/tailwind": "^1.2.0",
-        "@kui-dashboard/tailwindcss-plugin": "*",
-        "@kui-dashboard/vue-plugin": "*",
+        "@kui-dashboard/tailwindcss-plugin": "workspace:*",
+        "@kui-dashboard/vue-plugin": "workspace:*",
         "@vitejs/plugin-vue-jsx": "^4.1.1",
         "autoprefixer": "^10.4.14",
         "postcss": "^8.4.24",

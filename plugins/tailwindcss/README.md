@@ -3,7 +3,7 @@
 ##### To get started:
 
 ```bash
-yarn add @kui-dashboard/tailwindcss-plugin @iconify/tailwind  --dev
+npm i -D @kui-dashboard/tailwindcss-plugin @iconify/tailwind
 # Note: don't forget to install the icons set, for example `@iconify-json/tabler`
 ```
 

@@ -22,19 +22,19 @@ git clone https://github.com/kamona-ui/kui-dashboard.git
 cd kui-dashboard
 
 # 2. Install the dependencies:
-yarn install
+pnpm install
 
 # 3. Start the development server:
-yarn dev:vue
+pnpm dev:vue
 ```
 
 ##### Build
 
 ```bash
-yarn build:vue
+pnpm build:vue
 
 # Preview
-yarn preview:vue
+pnpm preview:vue
 ```
 
 ---
