@@ -30,9 +30,9 @@
     "bugs": {
         "url": "https://github.com/kamona-ui/kui-dashboard/issues"
     },
-    "main": "dist/kui-dashboard.umd.cjs",
-    "module": "dist/kui-dashboard.js",
-    "style": "dist/main.css",
+    "main": "./dist/kui-dashboard.umd.cjs",
+    "module": "./dist/kui-dashboard.js",
+    "style": "./dist/kui-dashboard.css",
     "files": [
         "src/**/*.js",
         "dist/**/*.js",
@@ -43,10 +43,7 @@
             "require": "./dist/kui-dashboard.umd.cjs",
             "import": "./dist/kui-dashboard.js"
         },
-        "./dist/kui-dashboard.css": {
-            "import": "./dist/kui-dashboard.css",
-            "require": "./dist/kui-dashboard.css"
-        }
+        "./dist/*.css": "./dist/*.css"
     },
     "scripts": {
         "dev": "vite",

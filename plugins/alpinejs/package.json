@@ -43,10 +43,7 @@
             "require": "./dist/index.cjs.js",
             "import": "./dist/index.esm.js"
         },
-        "./dist/main.css": {
-            "import": "./dist/main.css",
-            "require": "./dist/main.css"
-        }
+        "./dist/*.css": "./dist/*.css"
     },
     "scripts": {
         "dev": "run-s dev:*",

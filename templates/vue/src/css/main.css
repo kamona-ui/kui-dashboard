@@ -1,7 +1,28 @@
-@import 'tailwindcss/base';
-@import '@kui-dashboard/vue-plugin/dist/kui-dashboard.css';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import 'tailwindcss';
+
+@plugin '@kui-dashboard/tailwindcss-plugin';
+@plugin '@tailwindcss/forms';
+@plugin '@iconify/tailwind4' {
+    prefixes: tabler;
+}
+
+@source '../../index.html';
+@source '../**/*.jsx';
+@source '../**/*.js';
+@source '../../node_modules/@kui-dashboard/vue-plugin/src/**/*.jsx';
+@source '../../node_modules/@kui-dashboard/vue-plugin/src/**/*.js';
+
+@custom-variant dark (&:is(.dark *));
+
+@layer base {
+    *,
+    ::after,
+    ::before,
+    ::backdrop,
+    ::file-selector-button {
+        border-color: var(--color-gray-200, currentColor);
+    }
+}
 
 #nprogress {
     pointer-events: none;

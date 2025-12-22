@@ -1,8 +1,20 @@
-@import 'tailwindcss/base';
+@import 'tailwindcss';
 @import 'perfect-scrollbar/css/perfect-scrollbar.css';
 @import '@kui-dashboard/alpinejs-plugin/dist/main.css';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+
+@plugin '@kui-dashboard/tailwindcss-plugin';
+@plugin '@tailwindcss/forms';
+@plugin '@iconify/tailwind4' {
+    prefixes: tabler;
+}
+
+@source '../html/**/*.hbs';
+@source '../html/**/*.html';
+@source '../data/**/*.js';
+@source '../js/**/*.js';
+@source '../support/**/*.js';
+
+@custom-variant dark (&:is(.dark *));
 
 .dark .ps__rail-y,
 .dark .ps__rail-x {

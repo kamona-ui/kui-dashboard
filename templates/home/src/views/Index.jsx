@@ -156,12 +156,12 @@ export default defineComponent({
                         <div class="absolute inset-x-[-10vw] bottom-20 top-0 rounded-[77vw/50vw] rounded-t-none bg-white dark:bg-dark-0 md:bottom-0 md:top-24 md:rounded-[77vw/50vw] md:rounded-b-none"></div>
 
                         <div class="mx-auto max-w-7xl px-6 pb-24 md:pt-28">
-                            <div class="grid gap-5 perspective-100vw md:grid-cols-4 md:grid-rows-1">
+                            <div class="grid gap-5 perspective-[100vw] md:grid-cols-4 md:grid-rows-1">
                                 {/* Left */}
-                                <div class="hidden items-center justify-center transform-style-3d md:flex">
+                                <div class="hidden items-center justify-center transform-3d md:flex">
                                     <div
                                         id="mobile2Showcase"
-                                        class="flex h-full w-full items-center justify-center rotate-x-25 rotate-y-25 rotate-z--15"
+                                        class="flex h-full w-full items-center justify-center rotate-x-25 rotate-y-25 -rotate-z-15"
                                     >
                                         <img
                                             v-show={!isDark.value}
@@ -177,8 +177,8 @@ export default defineComponent({
                                 </div>
 
                                 {/* Center */}
-                                <div class="md:pb-18 col-span-3 row-start-2 flex flex-col items-center justify-center gap-10 transform-style-3d md:col-span-2 md:col-start-2 md:row-start-1">
-                                    <div class="mt-10 flex items-center justify-center transform-style-3d md:mt-4">
+                                <div class="md:pb-18 col-span-3 row-start-2 flex flex-col items-center justify-center gap-10 transform-3d md:col-span-2 md:col-start-2 md:row-start-1">
+                                    <div class="mt-10 flex items-center justify-center transform-3d md:mt-4">
                                         <img
                                             v-show={!isDark.value}
                                             id="desktopShowcase"
@@ -207,10 +207,10 @@ export default defineComponent({
                                 </div>
 
                                 {/* Right */}
-                                <div class="hidden items-center justify-center transform-style-3d md:flex">
+                                <div class="hidden items-center justify-center transform-3d md:flex">
                                     <div
                                         id="mobile1Showcase"
-                                        class="flex h-full w-full items-center justify-center rotate-x-25 rotate-y--25 rotate-z-15"
+                                        class="flex h-full w-full items-center justify-center rotate-x-25 -rotate-y-25 rotate-z-15"
                                     >
                                         <img
                                             v-show={!isDark.value}
